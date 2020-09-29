@@ -30,20 +30,20 @@ public class Cat {
 		g2.setColor(Color.black);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
-		g2.setColor(Color.yellow);
+		g2.setColor(Color.gray);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT*3);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH*2, EYE_HEIGHT/2);
 		// Draw the mouth
-		g2.setColor(Color.red);
+		g2.setColor(Color.gray);
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("Por Que?", catX, catY+HEAD_DIMENSION+10);	
+		g2.drawString("RIP in Peace, Arnold", catX, catY+HEAD_DIMENSION+10);	
 	}
 }
